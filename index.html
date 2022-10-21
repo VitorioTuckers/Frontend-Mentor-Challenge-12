@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img class="star" src="./images/icon-star.svg" alt="star-icon" />
+        <h1 class="header">How did we do?</h1>
+        <p class="header-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="rating">
+          <li><button class="selection" data-item="0">1</button></li>
+          <li><button class="selection" data-item="1">2</button></li>
+          <li><button class="selection" data-item="2">3</button></li>
+          <li><button class="selection" data-item="3">4</button></li>
+          <li><button class="selection" data-item="4">5</button></li>
+        </ul>
+        <button class="submit">SUBMIT</button>
+      </article>
+      <article class="modal hidden">
+        <div class="modal-card">
+          <img class="modal-img" src="./images/illustration-thank-you.svg" />
+          <p class="modal-rating">
+            You selected <span class="rating-value">0</span> out of 5
+          </p>
+          <h1 class="modal-header">Thank you!</h1>
+          <p class="modal-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
